@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkyHorizon Online Flight Booking Office — Book international flights, compare cabin classes, and enjoy 24/7 travel support.">
+  <title>SkyHorizon | Online Flight Booking Office</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="SkyHorizon logo" width="40" height="40">
+        Sky<span>Horizon</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="flights.html">Flights &amp; Services</a>
+        <a href="about.html">About &amp; FAQ</a>
+        <a href="signup.html" class="nav-cta">Book / Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">&#9992; Certified Online Flight Office &bull; 120+ Global Routes</span>
+          <h1>Fly Smarter Across the <span>World&rsquo;s Skies</span></h1>
+          <p>Compare daily international departures, lock in transparent fares with zero hidden fees, and manage your entire journey from one modern flight office.</p>
+          <div class="hero-actions">
+            <a href="signup.html" class="btn btn-accent">Book &amp; Create Account</a>
+            <a href="flights.html" class="btn btn-outline">Explore Flight Schedule</a>
+          </div>
+        </div>
+
+        <!-- Quick Flight Search Form -->
+        <div class="search-box" aria-label="Quick flight search">
+          <form class="search-form" action="flights.html" method="get">
+            <div class="search-field">
+              <label for="search-from">Departure City</label>
+              <select id="search-from" name="from" required>
+                <option value="ALP">Aleppo (ALP)</option>
+                <option value="DAM">Damascus (DAM)</option>
+                <option value="BEY">Beirut (BEY)</option>
+                <option value="AMM">Amman (AMM)</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="search-to">Destination</label>
+              <select id="search-to" name="to" required>
+                <option value="IST">Istanbul (IST)</option>
+                <option value="DXB">Dubai (DXB)</option>
+                <option value="CDG">Paris (CDG)</option>
+                <option value="CAI">Cairo (CAI)</option>
+                <option value="LHR">London (LHR)</option>
+                <option value="HND">Tokyo (HND)</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="search-date">Departure Date</label>
+              <input type="date" id="search-date" name="date" min="2026-11-27" required>
+            </div>
+            <div class="search-field">
+              <label for="search-cabin">Cabin Class</label>
+              <select id="search-cabin" name="cabin">
+                <option value="economy">Economy Class</option>
+                <option value="business">Business Class</option>
+                <option value="first">First Class</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Search Flights</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Statistics Bar -->
+    <section class="stats-bar" aria-label="Company highlights">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <strong>120+</strong>
+          <span>Global Destinations</span>
+        </div>
+        <div class="stat-item">
+          <strong>50,000+</strong>
+          <span>Happy Travelers</span>
+        </div>
+        <div class="stat-item">
+          <strong>24/7</strong>
+          <span>Flight Desk Support</span>
+        </div>
+        <div class="stat-item">
+          <strong>99.4%</strong>
+          <span>On-Time E-Ticketing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Top Picks This Season</span>
+          <h2>Popular Flight Destinations</h2>
+          <p>Hand-picked international routes with flexible baggage allowance and instant e-ticket confirmation.</p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-istanbul.png" alt="Sunset over the Bosphorus and mosque skyline in Istanbul" loading="lazy">
+              <span class="price-tag">From $215</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Direct &bull; 2h 05m</span>
+                <span class="badge badge-success">Daily</span>
+              </div>
+              <h3>Istanbul, Turkey</h3>
+              <p>Cross between two continents with daily non-stop flights, 30kg luggage, and complimentary onboard meals.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">IST Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-dubai.png" alt="Dubai skyline with Burj Khalifa illuminated at twilight" loading="lazy">
+              <span class="price-tag">From $290</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Direct &bull; 3h 15m</span>
+                <span class="badge badge-success">Popular</span>
+              </div>
+              <h3>Dubai, UAE</h3>
+              <p>Ideal for business and family travel with flexible date changes and rapid visa assistance through our desk.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">DXB Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-paris.png" alt="Eiffel Tower glowing at sunset along the Seine in Paris" loading="lazy">
+              <span class="price-tag">From $460</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>1 Stop &bull; 5h 40m</span>
+                <span class="badge badge-warning">Few Seats</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Discover European art, culture, and gastronomy with seamless layover connections and Schengen document guidance.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">CDG Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-cairo.png" alt="Great Pyramids of Giza under a golden desert sunset in Cairo" loading="lazy">
+              <span class="price-tag">From $195</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>Direct &bull; 1h 45m</span>
+                <span class="badge badge-success">Best Value</span>
+              </div>
+              <h3>Cairo, Egypt</h3>
+              <p>Short regional flights with morning and evening departures, great for weekend gateways and student travel.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">CAI Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-london.png" alt="Big Ben and the London Eye illuminated along the Thames at dusk" loading="lazy">
+              <span class="price-tag">From $510</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>1 Stop &bull; 6h 20m</span>
+                <span class="badge badge-success">Available</span>
+              </div>
+              <h3>London, UK</h3>
+              <p>Premium long-haul comfort with extra legroom options, priority boarding upgrades, and 24/7 rebooking protection.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">LHR Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card">
+            <figure class="card-media">
+              <img src="images/dest-tokyo.png" alt="Snow-capped Mount Fuji and traditional pagoda at twilight in Tokyo" loading="lazy">
+              <span class="price-tag">From $780</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>1 Stop &bull; 11h 50m</span>
+                <span class="badge badge-warning">Fast Filling</span>
+              </div>
+              <h3>Tokyo, Japan</h3>
+              <p>Experience East Asia aboard five-star partner carriers with generous 40kg checked baggage and lounge access deals.</p>
+              <div class="card-footer">
+                <span class="badge badge-sky">HND Airport</span>
+                <a href="signup.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Office Advantages</span>
+          <h2>Why Book With SkyHorizon?</h2>
+          <p>We combine digital booking speed with the personal care of a dedicated travel agency.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#9889;</div>
+            <h3>Instant E-Tickets</h3>
+            <p>Receive your verified PNR booking reference and boarding itinerary straight to your inbox in minutes.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128176;</div>
+            <h3>Transparent Pricing</h3>
+            <p>Every fare includes airport taxes and standard baggage&mdash;no surprise checkout fees ever.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128197;</div>
+            <h3>Flexible Changes</h3>
+            <p>Need to reschedule? Modify flight dates easily with reduced penalty fares on partner airlines.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128737;</div>
+            <h3>24/7 Flight Concierge</h3>
+            <p>Real human agents ready around the clock for delays, missed connections, and visa questions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Simple Process</span>
+          <h2>Ready for Takeoff in 3 Steps</h2>
+        </header>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Compare Routes</h3>
+            <p>Browse our live flight schedule and compare Economy, Business, and First Class fares side by side.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Register Your Profile</h3>
+            <p>Fill out our secure passenger sign-up form with your passport and preferred travel options.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Confirm &amp; Fly</h3>
+            <p>Get your confirmed e-ticket, online check-in reminders, and priority airport support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo CTA Banner -->
+    <section class="section">
+      <div class="container">
+        <aside class="cta-banner">
+          <div>
+            <h2>Get 15% Off Your First Online Booking</h2>
+            <p>Register your SkyHorizon Traveler Profile today to unlock exclusive student discounts, seat alerts, and bonus SkyMiles.</p>
+          </div>
+          <a href="signup.html" class="btn btn-accent">Create Free Account</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand">
+            <img src="images/logo.svg" alt="SkyHorizon logo" width="36" height="36">
+            Sky<span>Horizon</span>
+          </a>
+          <p>Your trusted online flight booking office. Instant e-tickets, transparent pricing, and 24/7 global traveler support.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flights.html">Flight Schedules</a></li>
+            <li><a href="about.html">About Our Office</a></li>
+            <li><a href="signup.html">Traveler Registration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Top Routes</h3>
+          <ul>
+            <li><a href="flights.html#schedule">Istanbul (IST)</a></li>
+            <li><a href="flights.html#schedule">Dubai (DXB)</a></li>
+            <li><a href="flights.html#schedule">Paris (CDG)</a></li>
+            <li><a href="flights.html#schedule">Tokyo (HND)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Office</h3>
+          <ul>
+            <li>Al-Aziziyah Street, Suite 402</li>
+            <li>Phone: +963 21 555 0194</li>
+            <li>Email: support@skyhorizon.travel</li>
+            <li>Hours: Daily, 08:00 &ndash; 22:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkyHorizon Online Flight Office. All rights reserved.</p>
+        <p>Built with pure HTML5 &amp; CSS3</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
